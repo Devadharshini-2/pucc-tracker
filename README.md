@@ -1,64 +1,62 @@
-# PUCC Tracker 🚗💨
+# PUCC Tracker 🚗
 
-A lightweight automation system for PUCC (Pollution Under Control Certificate) centers that automatically captures certificate data from the government portal and maintains digital records.
+A lightweight account management software built to simplify daily record keeping in a PUCC center.
 
-## Problem Statement
+## Overview
 
-PUCC centers often maintain daily records manually, making it difficult to track certificates, calculate collections, and access historical data.
+Previously, daily vehicle records and collections were maintained manually by writing down vehicle numbers and calculating totals at the end of the day.
 
-This project automates certificate tracking and reporting for a real-world PUCC center.
+PUCC Tracker automates this process by capturing certificate details during printing and maintaining digital records automatically.
+
+The software helps reduce manual work and makes daily account management faster and easier.
 
 ## Features
 
-- Automatic certificate data capture
-- Smart pricing engine
-- Duplicate certificate prevention
-- Historical date-wise reports
-- Fuel sorting
-- Time sorting
-- Edit charge functionality
-- Delete entry functionality
-- Auto-refresh dashboard
-- Lightweight SQLite database
+* Automatic capture of certificate details
+* Daily collection tracking
+* Date-wise historical reports
+* Edit and delete records
+* Fuel-wise sorting
+* Time-wise sorting
+* Automatic total calculation
+* Lightweight local database storage
 
 ## Tech Stack
 
-- Python
-- Flask
-- SQLite
-- JavaScript
-- Chrome Extension (Manifest V3)
-- HTML/CSS
+* Python
+* Flask
+* SQLite
+* JavaScript
+* Chrome Extension
 
-## System Flow
+## How It Works
 
-PUCC Website → Chrome Extension → Flask API → SQLite Database → Report Dashboard
-
-## Smart Pricing Logic
-
-| Certificate Fee | Actual Charge |
-|----------------|--------------|
-| ₹60 | ₹100 |
-| ₹100 | ₹200 |
-| ₹110 | ₹200 |
-| ₹150 (6 months) | ₹200 |
-| ₹150 (1 year) | ₹250 |
+Certificate Printing<br>
+↓<br>
+Automatic Data Capture<br>
+↓<br>
+Database Storage<br>
+↓<br>
+Report Dashboard
 
 ## Dashboard
 
-_Add screenshots here later._
+The report dashboard provides a quick overview of daily vehicle entries, collections, and historical records with sorting and editing capabilities.
+
+![PUCC Report Dashboard](zz.jpeg)
+
 
 ## Future Improvements
 
-- Monthly analytics
-- Vehicle search
-- Certificate preview
-- Database backup
+* Monthly reports
+* Search functionality
+* Certificate preview
+* Database backup
 
-## Real World Impact
+## Project Purpose
 
-Developed for an actual PUCC center to digitize certificate management and reduce manual work.
+This project was developed to simplify the daily account management process in a real-world PUCC center and reduce manual bookkeeping.
 
 ---
 
-**Developer:** Devadharshini S
+**Developed by Devadharshini S**
